@@ -1,0 +1,35 @@
+﻿namespace MeusAnimes.Models.Enums;
+
+public enum EnumGenero
+{
+    Acao,
+    Aventura,
+    Comedia,
+    Drama,
+    Romance,
+    Fantasia,
+    FiccaoCientifica,
+    Mecha,
+    SliceOfLife,
+    Sobrenatural,
+    Horror,
+    Misterio,
+    Psicologico,
+    Escolar,
+    Esporte,
+    Historico,
+    Magia,
+    Musical,
+    Superpoderes,
+    Seinen,
+    Shonen,
+    Shoujo,
+    Josei,
+    Cyberpunk,
+    Isekai,
+    Ecchi,
+    Harem,
+    Yaoi,
+    Yuri,
+    Tragedia
+}
