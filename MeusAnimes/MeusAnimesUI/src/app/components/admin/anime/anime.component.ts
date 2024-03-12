@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { AnimeService } from '../../../../services/anime.service';
+import { Anime } from '../../../models/anime.model';
 
 @Component({
   selector: 'app-anime',
@@ -12,11 +13,12 @@ import { AnimeService } from '../../../../services/anime.service';
 export class AnimeComponent implements OnInit {
 
   animeService = inject(AnimeService);
+  animes: Anime[] = [];
 
   ngOnInit(): void {
     this.animeService.animesGet().subscribe({
-      next: (res) => {
-        console.log(res);
+      next: (res: Anime[]) => {
+        this.animes = res;
       },
       error: (e) => {
         console.error(e);

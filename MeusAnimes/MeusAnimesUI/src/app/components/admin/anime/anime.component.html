@@ -1,1 +1,6 @@
-<p>anime works!</p>
+<ul>
+  @for (anime of animes; track $index) {
+    <li>{{ anime.name }}</li>
+  }
+</ul>
+

@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12">
+    <div class="col-11">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" id="nome" placeholder="Nome Anime" [(ngModel)]="anime.name">
+    </div>
+    <div class="col-11">
+      <label for="description" class="form-label">Descrição</label>
+      <input type="text" class="form-control" id="description" placeholder="Descricao" [(ngModel)]="anime.Description">
+    </div>
+    <div class="col-11">
+      <label for="Genero" class="form-label">Genero</label>
+      <input type="number" class="form-control" id="Genero" placeholder="Genero" [(ngModel)]="anime.genero">
+    </div>
+    <div class="col-11">
+      <label for="releaseDate" class="form-label">Data de Lançamento</label>
+      <input type="text" class="form-control" id="releaseDate" placeholder="00/00/0000" [(ngModel)]="anime.releaseDate">
+    </div>
+    <div class="col-11">
+      <label for="Classificacao" class="form-label">Classificação</label>
+      <input type="text" class="form-control" id="Classificacao" placeholder="Classificação" [(ngModel)]="anime.classificacao">
+    </div>
+  </div>
+
+  <button (click)="createAnime()">Enviar</button>
+</div>
